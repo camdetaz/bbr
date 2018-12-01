@@ -58,7 +58,7 @@ get_season <- function(year) {
   if (year < 1947 | year > newest_year) {
     stop("Data are only available after 1947 and up to the present.")
   }
-  url <- paste0("http://www.basketball-reference.com/leagues/NBA_",
+  url <- paste0("http://www.basketball-reference.com/playoffs/NBA_",
                 year,
                 "_totals.html")
 
