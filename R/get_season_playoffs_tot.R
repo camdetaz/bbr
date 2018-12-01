@@ -53,7 +53,7 @@
 #' d <- get_season(2010)
 #' @export
 #'
-get_season <- function(year) {
+get_season_playoffs_tot <- function(year) {
   newest_year <- 1 + as.numeric(format(Sys.Date(), "%Y"))
   if (year < 1947 | year > newest_year) {
     stop("Data are only available after 1947 and up to the present.")
