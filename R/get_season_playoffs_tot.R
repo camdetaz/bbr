@@ -50,9 +50,8 @@
 #'
 #'
 #' @examples
-#' d <- get_season(2010)
+#' d <- get_season_playoffs_tot(2010)
 #' @export
-#'
 get_season_playoffs_tot <- function(year) {
   newest_year <- 1 + as.numeric(format(Sys.Date(), "%Y"))
   if (year < 1947 | year > newest_year) {
